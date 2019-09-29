@@ -4,25 +4,17 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css"  href="style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#header").load("header.html", function(){
+					$("#home").addClass("active").removeClass("void");
+				});
+			});
+		</script>
 		<title>LongTech Synthagen</title>
 	</head>
 	<body>
-		<div class="header">
-			<ul>
-				<li>
-					<a class="active" href="index.html">Home</a>
-				</li>
-				<li>
-					<a class="void" href="anatomy.html">Anatomy</a>
-				</li>
-				<li>
-					<a class="void" href="faq.html">FAQ</a>
-				</li>
-				<li>
-					<a class="void" href="repair.html">Repair</a>
-				</li>
-			</ul>
-		</div>
+		<div class="header"></div>
 		<div class="content">
 			<h1>Upgrading or repairing your synthagen</h1>
 			<p>Warning, the following guides require some technical know-how. If you at all unsure about what you are doing, it is very important that you have your synthagen ship itself to an authorized repair agent.
