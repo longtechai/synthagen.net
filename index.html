@@ -4,25 +4,15 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css"  href="style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#header").load("header.html");
+			});
+		</script>
 		<title>LongTech Synthagen</title>
 	</head>
 	<body>
-		<div class="header">
-			<ul>
-				<li>
-					<a class="active" href="index.html">Home</a>
-				</li>
-				<li>
-					<a class="void" href="anatomy.html">Anatomy</a>
-				</li>
-				<li>
-					<a class="void" href="faq.html">FAQ</a>
-				</li>
-				<li>
-					<a class="void" href="repair.html">Repair</a>
-				</li>
-			</ul>
-		</div>
+		<div id="header"></div>
 		<div class="content">
 			<h1>What are synthagen?</h1>
 			<p>Synthagen are an original open species<sup>1</sup>
@@ -40,7 +30,7 @@
 	</p>
 		</div>
 		<footer class="footer">
-		<p>Copyright © LongTech. CC-BY-SA 4.0. <a href="#">(link to the creative commons thing on the last part)</a></p>
+		<p>Copyright © LongTech. <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0.</a></p>
 		</footer>
 	</body>
 </html>
